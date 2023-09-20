@@ -22,9 +22,9 @@
   font-family: "AvertaCY";
 }
 
-*::selection{
-    color: #fff;
-    background-color: #000;
+*::selection {
+  color: #fff;
+  background-color: #000;
 }
 
 html,
@@ -59,10 +59,11 @@ body {
 }
 
 .rightnav {
+  width: 18%;
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .rightnav h4 {
@@ -70,7 +71,16 @@ body {
   font-size: 1.4rem;
 }
 
-.rightnav #menu {
+#menudiv {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightnav i {
   font-family: "AvertaCY Semibold";
   font-size: 1.5rem;
   cursor: pointer;
@@ -106,6 +116,12 @@ body {
 .title .elem h1 {
   font-family: "AvertaCY Semibold";
   font-size: 6rem;
-  color: transparent;
+  color: #fff;
   -webkit-text-stroke: 2px #000;
+}
+
+.title .elem h1:hover{
+  color: #737373;
+  mix-blend-mode: difference;
+  -webkit-text-stroke: 2px #fff;
 }

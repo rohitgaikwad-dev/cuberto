@@ -9,11 +9,11 @@
     <!--Remix Icon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!--Shery Css-->
-    <link rel="stylesheet" href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css">
+    <!--Cuberto CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
 
     <!--Style-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -27,10 +27,11 @@
 
                 <div class="rightnav">
                     <h4>our channel</h4>
-                    <h4>menu</h4>
-                    <div id="menu">
-                        <i class="ri-menu-line"></i>
+                    <div id="menudiv" data-cursor="-exclusion" data-cursor-text=" " data-cursor-stick="#menu">
+                        <h4>menu</h4>
+                        <i class="ri-menu-line" id="menu"></i>
                     </div>
+
                 </div>
             </div>
 
@@ -39,14 +40,14 @@
                     <h3>We make it happen</h3>
                 </div>
 
-                <div class="title">
-                    <div class="elem">
+                <div class="title" data-cursor="-exclusion">
+                    <div class="elem" data-cursor-video="/assets/video/0.mp4">
                         <h1>Websites</h1>
                     </div>
-                    <div class="elem">
+                    <div class="elem" data-cursor-video="/assets/video/1.mp4">
                         <h1>Apps</h1>
                     </div>
-                    <div class="elem">
+                    <div class="elem" data-cursor-video="/assets/video/2.mp4">
                         <h1>Branding</h1>
                     </div>
                 </div>
@@ -54,25 +55,14 @@
         </div>
     </div>
 
+    <!--Cuberto JS-->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    
     <!--GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-    <!--ScrollTrigger-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!--Three.Js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
-        integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!--ControlKit-->
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-
-    <!--Shery.Js-->
-    <script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
-
     <!--Script-->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

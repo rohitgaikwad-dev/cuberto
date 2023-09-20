@@ -1,0 +1,1 @@
+let cursor = new MouseFollower();
